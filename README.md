@@ -2,12 +2,18 @@
 
 
 | Case          | Expected output |
-| ------------- |:-------------: | 
-| [3,3,3]       | equilateral |
-| [3,3,2]   | Isosceles triangle |  
-| [0,1,2],[0,0,0],[0,0,1],[2,2,4] | Not triangle      |  
-| [“2”,1,2],[“&”,2,2] | Not triangle, contains string      | 
-| Any value is zero | not triangle    |   
-| [int.max, 4, int.max]| not triangle      |  
-| [4,5,6] | Scalene triangle |   
+| ------------- |:-------------: |  
+| 1, 2, 2 | isosceles triangle |  
+| 2, 1, 2 | isosceles triangle |  
+| 2, 2, 1 | isosceles triangle |  
+| 2, 2, 2 | equilateral triangle |
+| 1, 1, 1 | equilateral triangle |
+| a, 2, 1 | not a number |  
+| 1, 2, 3 | scalene triangle | 
+| 2, 1, 3 | scalene triangle | 
+| 3, 2, 1 | scalene triangle | 
+| 1, 3, 2 | scalene triangle | 
+| 0, 0, 0 | not a triangle |  
+| -10, 1, 2 | not a triangle |
+| 1, -1, 2 | not a triangle | 
 
