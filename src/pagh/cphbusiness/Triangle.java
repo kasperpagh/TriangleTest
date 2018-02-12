@@ -49,18 +49,22 @@ public class Triangle
         {
             return "not a triangle!";
         }
-        if (a == b && b == c)
+        else if (a == b && b == c)
         {
             return "equilateral";
         }
-        if (a == b || b == c || c == a)
+        else if (a == b || b == c || c == a)
         {
             return "isosceles";
         }
-        if (a != c && b != a && c != b)
+        else
         {
+            //a != b && b != c && c != a Er altid sandt, hvis de ovenstående ikke er sande!
+            //Det skyldes at der kun er tre typer trekanter (ud fra sider i hvertfald
+            System.out.println("common git");
+
             return "scalene triangle";
         }
-        return null;
+
     }
 }
